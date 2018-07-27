@@ -638,7 +638,7 @@ comments
 
 
 
-# CLASSES & OBJECTS
+# # CLASSES & OBJECTS
 class Person:
     __name = ''
     __email = ''
@@ -659,13 +659,38 @@ class Person:
     def get_email(self):
         return self.__email
 
-andy = Person()
-andy.set_name("Andy")
-andy.set_email("andy@gmail.com")
-print(andy.get_name())
+    def toString(self):
+        return "{} can be contacted at {}".format(self.__name, self.__email)
 
-# this don't' work!!!!!!!!!!!!11
-mark = Person("Mark", "mark@gmail.com")
-print(mark.get_name())
+# brad = Person('Brad Traversy', 'brad@gmail.com')
+# print(brad.get_name())
+# print(brad.toString())
+#
+# andy = Person("Andy", "andy@gmail.com")
+# print(andy.get_name())
 
+
+# inerit class person
+class Customer(Person):
+    __balance = 0
+
+    def __init__(self, name, email, balance):
+        self.__name = name
+        self.__email = email
+        self.__balance = balance
+        super(Customer, self).__init__(name, email)
+
+    def set_balance(self, balance):
+        self.__balance = balance
+
+    def get_balance(self):
+        return self.__balance
+
+    def toString(self):
+        return "{} has a balance of {}, and can be contacted at {}".format(self.__name, self.__balance, self.__email)
+
+john = Customer("john","jj@gdfg.gdf",200)
+print(john.toString())
+john.set_balance(434)
+print(john.get_balance())
 
