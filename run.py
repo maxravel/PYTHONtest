@@ -35,13 +35,13 @@
 # print(bool(y))
 
 
-# listy
+# # listy
 # produkty = ["ser","mleko","parówki"]
 # produkty.append("pomidor")
 # print(produkty[1:2])
 # print(type(produkty))
-# # produkty.clear()
-# print(produkty)
+# produkty.clear()
+# print(1, produkty)
 # x = produkty.count("pomidor")
 # print(x)
 # wiecej_produktow = ["kawa","sos"]
@@ -57,7 +57,7 @@
 
 
 # słowniki
-# person = {"wiek":20,"imię":"ania","nazwisko":"kowalska"}
+# person = {"wiek":20, "imię":"ania", "nazwisko":"kowalska"}
 # print(person)
 # print(person["wiek"])
 # keys = person.keys()
@@ -84,7 +84,6 @@
 #     print(suma)
 
 # lista = ["a","b","c","d","e","f","g"]
-#
 # for litera in lista:
 #     print(litera)
 #     if litera == "e":
@@ -94,7 +93,7 @@
 #     print(i)
 
 # fruits = ["apple", "pear", "banana", "orange", "apple"]
-# first one is enumerating number:
+# # first one is enumerating number:
 # for i, fruit in enumerate(fruits):
 #     print("Sprawdzam {}".format(i))
 #     if i == 3:
@@ -102,6 +101,7 @@
 #     print(i)
 #     print(fruit)
 # print("koniec")
+# print(enumerate(fruits))
 
 # x = "Hello {}"
 # y = x.format("world!")
@@ -260,8 +260,7 @@
 
 
 
-#exceptions
-
+# # exceptions
 # try:
 #     file = open("tekst.txt","r+")
 #     file.write("tester")
@@ -524,7 +523,6 @@ comments
 
 
 # # functions
-#
 # # default name is barry, but when you put different function output will be different
 # def sayHello(name = "barry"):
 #     print("hello", name)
@@ -639,58 +637,58 @@ comments
 
 
 # # CLASSES & OBJECTS
-class Person:
-    __name = ''
-    __email = ''
-
-    def __init__(self, name, email):
-        self.__name = name
-        self.__email = email
-
-    def set_name(self, name):
-        self.__name = name
-
-    def get_name(self):
-        return self.__name
-
-    def set_email(self, email):
-        self.__email = email
-
-    def get_email(self):
-        return self.__email
-
-    def toString(self):
-        return "{} can be contacted at {}".format(self.__name, self.__email)
-
-# brad = Person('Brad Traversy', 'brad@gmail.com')
-# print(brad.get_name())
-# print(brad.toString())
+# class Person:
+#     __name = ''
+#     __email = ''
 #
-# andy = Person("Andy", "andy@gmail.com")
-# print(andy.get_name())
+#     def __init__(self, name, email):
+#         self.__name = name
+#         self.__email = email
+#
+#     def set_name(self, name):
+#         self.__name = name
+#
+#     def get_name(self):
+#         return self.__name
+#
+#     def set_email(self, email):
+#         self.__email = email
+#
+#     def get_email(self):
+#         return self.__email
+#
+#     def toString(self):
+#         return "{} can be contacted at {}".format(self.__name, self.__email)
+#
+# # brad = Person('Brad Traversy', 'brad@gmail.com')
+# # print(brad.get_name())
+# # print(brad.toString())
+# #
+# # andy = Person("Andy", "andy@gmail.com")
+# # print(andy.get_name())
 
 
-# inerit class person
-class Customer(Person):
-    __balance = 0
 
-    def __init__(self, name, email, balance):
-        self.__name = name
-        self.__email = email
-        self.__balance = balance
-        super(Customer, self).__init__(name, email)
-
-    def set_balance(self, balance):
-        self.__balance = balance
-
-    def get_balance(self):
-        return self.__balance
-
-    def toString(self):
-        return "{} has a balance of {}, and can be contacted at {}".format(self.__name, self.__balance, self.__email)
-
-john = Customer("john","jj@gdfg.gdf",200)
-print(john.toString())
-john.set_balance(434)
-print(john.get_balance())
-
+# # inerit class person
+# class Customer(Person):
+#     __balance = 0
+#
+#     def __init__(self, name, email, balance):
+#         self.__name = name
+#         self.__email = email
+#         self.__balance = balance
+#         super(Customer, self).__init__(name, email)
+#
+#     def set_balance(self, balance):
+#         self.__balance = balance
+#
+#     def get_balance(self):
+#         return self.__balance
+#
+#     def toString(self):
+#         return "{} has a balance of {}, and can be contacted at {}".format(self.__name, self.__balance, self.__email)
+#
+# john = Customer("john","jj@gdfg.gdf",200)
+# print(john.toString())
+# john.set_balance(434)
+# print(john.get_balance())
