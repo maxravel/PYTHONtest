@@ -692,3 +692,74 @@ comments
 # print(john.toString())
 # john.set_balance(434)
 # print(john.get_balance())
+
+
+
+
+# a,b = 1,2
+# a=b
+# print(a)
+# b+=a
+# print(a)
+#
+# s = "Python or Java?"
+# print(s[-5] + s[1:6])
+#
+# print(s[-5])
+#
+# a,b,c = None,True,False
+# if a and b or c:
+#     print(1)
+# elif b:
+#     print(2)
+# elif c:
+#     print(3)
+# else:
+#     print(4)
+
+
+
+# for a in "ABC":
+#     for b in a:
+#         print(a,b)
+#
+# x = 1
+# while x<10:
+#     x + 1
+#     print(x)
+
+# def funkcja1():
+#     pass
+
+# def funkcja2(None):
+#     return None
+
+# def funkcja3(a=None, b):
+#     pass
+
+# def funkcj4(a, b):
+#     return a
+#
+#
+# class Language(object):
+#     def show(self):
+#         print("i use {0}".format(self.ide))
+#
+# class Pycharm(Language):
+#     ide = "Pycharm"
+#
+# class Eclipse(Language):
+#     ide = "Eclipse"
+#
+# class Finalide(Eclipse,Pycharm):
+#     pass
+#
+# print(Finalide().show())
+#
+#
+# class Str2(str):
+#     def __init__(self,a):
+#         if a and len(a)<3:
+#             raise ValueError
+#
+# Str2("Pi")
