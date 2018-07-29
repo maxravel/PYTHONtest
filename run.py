@@ -35,13 +35,23 @@
 # print(bool(y))
 
 
-# # listy
-# produkty = ["ser","mleko","parówki"]
+# # LISTS
+# produkty = ["ser","mleko","parówki","pizza"]
+
+# # appending to the end of list
 # produkty.append("pomidor")
-# print(produkty[1:2])
+
+# # insert in the middle of list with parameters index
+# produkty.insert(2,"ciastko")
+# print(produkty)
+# print(produkty[1:3])
 # print(type(produkty))
+
+# # clearing all list elements
 # produkty.clear()
 # print(1, produkty)
+
+# # counting hom many specific elements are on list
 # x = produkty.count("pomidor")
 # print(x)
 # wiecej_produktow = ["kawa","sos"]
@@ -50,18 +60,33 @@
 # produkty.remove("sos")
 # print(produkty)
 
+# # sorting in alphabetical order
+# produkty.sort()
+# print(produkty)
 
-# tuple nie można edytować
+# #  reverse list
+# produkty.reverse()
+
+# # copying list
+# produkty2 = produkty.copy()
+# print(produkty2)
+
+
+# # TUPLES tupli nie można edytować (immutable)
 # przybory = ("dlugopis","linijka","kredka")
 # print(przybory)
 
 
-# słowniki
+
+# # słowniki DICTIONARIES
 # person = {"wiek":20, "imię":"ania", "nazwisko":"kowalska"}
 # print(person)
 # print(person["wiek"])
 # keys = person.keys()
 # print(keys)
+
+
+
 
 # pętla while
 # i = 0
@@ -592,6 +617,25 @@ comments
 #
 # # is alphanumeric - checking if string is alphanumeric
 # print(myStr.isalpha())
+#
+# # new line
+# print("Andy\nRobbins")
+#
+# #quotation mark
+# print("Andy\"Dfen")
+#
+# # upper case
+# avc = "dsfsdfs"
+# print(avc.upper())
+#
+# # length of string
+# print(len(avc))
+#
+# # index of element
+# print(avc.index("f"))
+#
+# # replacing some words/letters
+# print(avc.replace("sf","xxx"))
 
 
 
@@ -695,7 +739,7 @@ comments
 
 
 
-
+# infoshare test
 # a,b = 1,2
 # a=b
 # print(a)
@@ -718,7 +762,6 @@ comments
 #     print(4)
 
 
-
 # for a in "ABC":
 #     for b in a:
 #         print(a,b)
@@ -727,6 +770,7 @@ comments
 # while x<10:
 #     x + 1
 #     print(x)
+
 
 # def funkcja1():
 #     pass
@@ -761,5 +805,41 @@ comments
 #     def __init__(self,a):
 #         if a and len(a)<3:
 #             raise ValueError
-#
 # Str2("Pi")
+
+
+
+# # ************************FREECODECAMP
+# # numbers
+# p = -5
+# # absolute number
+# print(abs(p))
+# # p^3
+# print(pow(p,3))
+# # greatest number from parameters
+# print(max(2,3))
+# #rounding down the number
+# print(round(4.4))
+#
+# # importing some additional functions
+# from math import *
+# # rounding to the nearest down number
+# print(floor(3.4))
+# # rounding to the nearest up number
+# print(ceil(3.4))
+#
+# print(sqrt(144))
+
+
+
+# # INPUT FROM USER
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# print("Hello {}".format(name)+" Your age is "+age)
+
+# # simple calculator, adding two numbers
+# a = input("Enter first number: ")
+# b = input("Enter second number: ")
+# # float() converting to integer type
+# result = float(a)+float(b)
+# print(result)
