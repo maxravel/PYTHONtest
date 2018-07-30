@@ -843,3 +843,55 @@ comments
 # # float() converting to integer type
 # result = float(a)+float(b)
 # print(result)
+
+
+
+# # CLASSES and OBJECTS ONE MORE TIME
+# class Student:
+#     def __init__(self, name, major, gpa, is_on_probation):
+#         self.name = name
+#         self.major = major
+#         self.gpa = gpa
+#         self.is_on_probation = is_on_probation
+#
+#     def is_good_student(self):
+#         if self.gpa > 4.2:
+#             return True
+#         else:
+#             return False
+#
+#
+# student1 = Student("Andy","Math",4.4,True)
+# student2 = Student("Mark","Physics",4.1,False)
+#
+# print(student1.name)
+# print(student2.is_good_student())
+
+
+# # QUESTION GAME
+# question_prompts =[
+#     "What color are apples: \n A. Red \n B. Purple \n C.Yellow \n\n",
+#     "What color are bananas: \n A. Black \n B. Yellow \n C. White \n\n",
+#     "What color are pears: \n A. Purple \n B. Grey \n C. Green \n\n"
+# ]
+#
+# class Question:
+#     def __init__(self, prompt, answer):
+#         self.prompt = prompt
+#         self.answer = answer
+#
+# questions = [
+#     Question(question_prompts[0],"a"),
+#     Question(question_prompts[1],"b"),
+#     Question(question_prompts[2],"c")
+# ]
+#
+# def run_test(questions):
+#     score = 0
+#     for question in questions:
+#         answer = input(question.prompt)
+#         if answer == question.answer:
+#             score += 1
+#     print("You got: "+str(score) + "/" + str(len(questions)))
+#
+# run_test(questions)
