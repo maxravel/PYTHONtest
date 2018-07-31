@@ -2,7 +2,7 @@
 # print(x/2)
 # print(type(x))
 # print(type(x/2))
-#
+
 # y = "hello"
 # z = " world"
 # print(y+z)
@@ -11,10 +11,9 @@
 # p = input()
 # p = int(p)
 # #p = float(p)
-#
+
 # print(p*2)
 # print(type(p*2))
-
 
 # x = "asddfafdafads"
 # x = x[1:4]
@@ -26,13 +25,14 @@
 # else:
 #     print("jakie?")
 # print("gotowe")
-#
+
 # x = 6 < 7
 # print(x)
 # print(type(x))
-#
+
 # y = 1
 # print(bool(y))
+
 
 
 # # LISTS
@@ -72,6 +72,7 @@
 # print(produkty2)
 
 
+
 # # TUPLES tupli nie można edytować (immutable)
 # przybory = ("dlugopis","linijka","kredka")
 # print(przybory)
@@ -87,15 +88,14 @@
 
 
 
-
-# pętla while
+# # WHILE LOOP pętla while
 # i = 0
 # while i <= 10:
 #     print(i)
 #     i += 1
 # print("koniec")
 
-# i=10
+# i = 10
 # while i>0:
 #     print(i)
 #     i -= 1
@@ -146,7 +146,6 @@
 # else:
 #     print("nic nie znaleziono")
 
-
 # while True:
 #     liczba = int(input())
 #     if liczba > 20 and liczba < 80:
@@ -157,6 +156,8 @@
 #         print("nic")
 
 
+
+# # TIME czas
 # import time
 # print("Start")
 # time.sleep(2)
@@ -180,45 +181,44 @@
 #         timer2 = time.time()
 #     if time.time() - timer3 >5:
 #         break
-
+#
 # import datetime
 # teraz = datetime.datetime.now()
 # print(str(teraz.hour)+" : "+str(teraz.minute))
 # print(str(teraz.strftime("%H:%M  %d.%m.%Y")))
 
 
+
+# FUNCTIONS funkcje
 # def printme(liczba):
 #     print("hello")
 #     print(liczba)
-#
 # printme(5)
 
 # def mnoz(a,b=4):
 #     return a*b
-#
 # wynik = mnoz(2)
-#
 # print(wynik)
 
 
-#
-# # import file
+
+# # IMPORT FILE
 # import new
 # new.test("hello")
 # new.test("121")
-#
+
 # # import function from file
 # from new import test
 # test("hello")
 # test("121")
-#
+
 # # import all from file
 # from new import *
 # test("another one")
-#
+
 # def testOne():
 #     print("Test one run.py")
-#
+
 # # import function with same name as another name
 # from new import testOne as testOneNew
 # testOne()
@@ -250,7 +250,7 @@
 # import os
 # lista = os.listdir(".")
 # print(lista)
-#
+
 # for item in os.listdir("."):
 #     # print(item)
 #     if os.path.isfile(item):
@@ -272,6 +272,7 @@
 # os.rmdir("bestFolder")
 
 # open("test2.txt","w").close()
+
 
 
 # # making directories
@@ -307,7 +308,7 @@
 
 
 
-# # objects
+# # OBJECTS
 # class Calculator():
 #     def __init__(self):
 #         print("init")
@@ -329,7 +330,7 @@
 #         print(wynik)
 
 # my_calculator = Calculator()
-#
+
 # my_calculator.dodaj(2,3)
 
 # test = Calculator()
@@ -343,7 +344,7 @@
 # print(test3)
 
 # if test3:
-## __bool__ store boolean value of class
+# # __bool__ store boolean value of class
 #     print("True")
 # else:
 #     print("Falseeee")
@@ -399,7 +400,7 @@
 #     def poke(self):
 #         super().poke()
 #         print("Child poked")
-#
+
 # child = Child()
 # child.poke()
 # child.parent()
@@ -409,18 +410,18 @@
 #         self.name = name
 #         self.surname = "Kwiatkowski"
 #         self.age = 25
-#
+
 # class Employee(Person):
 #     def __init__(self, position):
 #         super().__init__("Tomek")
 #         self.position = position
 #         self.specialization = "Python"
-#
+
 # class Client(Person):
 #     def __init__(self, name):
 #         super().__init__(name)
 #         self.ordered = "website"
-#
+
 # worker = Employee("programmer")
 # print(worker.name)
 # print(worker.position)
@@ -428,7 +429,7 @@
 
 # worker2 = Employee("designer")
 # print(worker2.position)
-#
+
 # buyer = Client("Marta")
 # print(buyer.name)
 
@@ -438,12 +439,12 @@
 # class TooColdException(Exception):
 #     def __init__(self, temp):
 #         super().__init__("Temperature {} is below absolute zero.".format(temp))
-#
+
 # def celsius_to_kelvin(temp):
 #     if temp < -273:
 #         raise TooColdException(temp)
 #     return temp+273
-#
+
 # # try:
 # #     print(celsius_to_kelvin(-300))
 # # except TooColdException:
@@ -465,10 +466,10 @@ comments
 # print("""fsdfsdfsd
 # sdsdfdsf
 # sdfsdfsfds""")
-#
+
 # print("hello"[2:4])
 # # this above printing ll
-#
+
 # print(2,3,4,"string")
 # # printing in new line
 # print("line1\nline2\nline3")
@@ -485,7 +486,7 @@ comments
 # myDictionary = {"a":1,"b":2,"c":3}
 # print(type(myList), myList)
 # print(type(myDictionary), myDictionary)
-#
+
 # print(myList[3])
 # print(myDictionary["a"])
 
@@ -493,18 +494,18 @@ comments
 
 # # CONDITIONALS
 # x = 4;
-#
+
 # # basic if
 # if x < 6:
 #     print("this is true")
 #     print("only here it will be works")
-#
+
 # # if and else
 # if x > 6:
 #     print("your number is greater than 6")
 # else:
 #     print("your number is lower than 6")
-#
+
 # # elif
 # color = "blue"
 # if color == "red":
@@ -513,12 +514,12 @@ comments
 #     print("color is blue")
 # else:
 #     print("color is different")
-#
+
 # # nested if
 # if color == "blue":
 #     if x <10:
 #         print("color is blue and x is lower than 10")
-#
+
 # # logical operators
 # if color == "blue" and x <10:
 #     print("true")
@@ -530,13 +531,13 @@ comments
 # people = ["jonh","barry","bob","alf"]
 # for person in people:
 #     print("current person: ", person)
-#
+
 # for i in range(len(people)):
 #     print("current person: ", people[i])
-#
+
 # for i in range(1,10):
 #     print(i)
-#
+
 # # while loop
 # count = 0
 # while count < 10:
@@ -713,7 +714,7 @@ comments
 
 
 
-# # inerit class person
+# # inherit class person
 # class Customer(Person):
 #     __balance = 0
 #
